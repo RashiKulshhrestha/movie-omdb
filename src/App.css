@@ -1,0 +1,44 @@
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.gutter-row{
+  margin: '20px 0'
+}
+
+.gutter-box Card{
+  width: 300px;
+}
+
+.ant-tag{
+  margin:10px 0 10px 0;
+}
+
+.center{
+  text-align: center;
+}
+.ant-layout-header{
+  background-color: black;
+}
+
+h3.ant-typography{
+  color: white;
+}
+.header-omdb{
+  margin-top: 14px;
+}
+.ant-typography{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.search-bar{
+  margin: 10px 0px 10px 0;
+  display: block;
+  
+}
+.type-input{
+  margin-left: 600px;
+  width: 120px;
+}
+.danger-alert{
+  margin: 20px 0px;
+}
