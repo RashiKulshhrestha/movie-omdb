@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The link of the app is https://keen-cori-09f300.netlify.app/
 
 ## Available Scripts
 
