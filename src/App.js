@@ -50,7 +50,7 @@ const ColCardBox = ({Title, imdbID, Poster, Type, ShowDetail, DetailRequest, Act
         ActivateModal1(true);
         DetailRequest(true);
 
-        fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`)
+        fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=${API_KEY}`)
         .then(resp => resp)
         .then(resp => resp.json())
         .then(response => {
@@ -76,7 +76,7 @@ const ColCardBox = ({Title, imdbID, Poster, Type, ShowDetail, DetailRequest, Act
                     cover={
                         <img
                             alt={Title}
-                            src={Poster === 'N/A' ? 'http://placehold.it/198x264&text=Image+Not+Found' : Poster}
+                            src={Poster === 'N/A' ? 'https://placehold.it/198x264&text=Image+Not+Found' : Poster}
                             onClick={() => clickHandler()}
                             
                         />
@@ -124,7 +124,7 @@ const FavouriteMovies = () => {
                     cover={
                         <img
                             alt={item.Title}
-                            src={item.Poster === 'N/A' ? 'http://placehold.it/198x264&text=Image+Not+Found' : item.Poster}
+                            src={item.Poster === 'N/A' ? 'https://placehold.it/198x264&text=Image+Not+Found' : item.Poster}
                         />
                     }
                 >
@@ -149,7 +149,7 @@ const MovieDetail = ({Title, Poster, imdbRating, Rated, Runtime, Genre, Plot}) =
         <Row>
             <Col span={11} >
                 <img 
-                    src={Poster === 'N/A' ? 'http://placehold.it/198x264&text=Image+Not+Found' : Poster} 
+                    src={Poster === 'N/A' ? 'https://placehold.it/198x264&text=Image+Not+Found' : Poster} 
                     alt={Title} 
                 />
             </Col>
@@ -201,7 +201,7 @@ function App() {
         setError(null);
         setData(null);
         console.log(filter);
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&&s=${q}&&type=${filter}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&&s=${q}&&type=${filter}`)
         .then(resp => resp)
         .then(resp => resp.json())
         .then(response => {
